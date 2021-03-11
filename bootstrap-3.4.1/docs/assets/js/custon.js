@@ -1,6 +1,6 @@
 //DOM manupulation
 
-
+// get element from select box
 function selectBox() {
     var select = document.getElementById("selectbox")
     var selected = select.options[select.selectedIndex].value;
@@ -8,7 +8,7 @@ function selectBox() {
     alert("The color selected is : " + selected);
 }
 
-
+// get element from radio
 function radioSelect() {
     var opt_1 = document.getElementById("options1");
     var opt_2 = document.getElementById("options2");
@@ -24,13 +24,51 @@ function radioSelect() {
         alert("Nothing is selected... ");
 }
 
+//get element by add and display it value
 function buttonClick() {
     var str = document.getElementById("name").value;
     alert("The username inputed is : " + str);
 }
 
 
+// Get element bu tag and class
+function changeStyle(){
+    //var para = document.getElementsByTagName("p");
 
+    var element = document.getElementsByClassName("mypara");
+
+    for(var x = 0; x< element.length; x++){
+        element[x].style.fontSize = 28;
+        element[x].style.color = "blue";
+        element[x].style.fontWeight = "bold";
+
+    }
+    
+    /*for(var i = 0; i<para.length; i++){
+        para[i].style.fontSize = 22;
+        para[i].style.color = "red";
+        para[i].style.fontStyle = "italic";
+        para[i].style.fontWeight = "bold";
+
+    }*/
+    
+
+    
+}
+
+
+//get image by over and change it
+
+function setNewImage(){
+    document.getElementById("imgchange").src = "../../assets/img/expo-lyft.jpg";
+}
+function setOuldImage(){
+    document.getElementById("imgchange").src = "../../assets/img/sass-less.png";
+
+}
+
+
+//get element by id, innerhate it value and change it
 /*function buttonClick() {
     document.getElementById("test").innerHTML = "Eddy Mendes";
 }*/
