@@ -68,6 +68,22 @@ function setOuldImage(){
 }
 
 
+//validation form
+
+function validate(){
+    var username = document.getElementById("user");
+    var password = document.getElementById("pass");
+
+    if(username.value.trim() =="" || password.value.trim() == "" ){
+        alert("Username or Password can't be blank!!!");
+        return false;
+
+    }else{
+        true;
+    }
+}
+
+
 //get element by id, innerhate it value and change it
 /*function buttonClick() {
     document.getElementById("test").innerHTML = "Eddy Mendes";
