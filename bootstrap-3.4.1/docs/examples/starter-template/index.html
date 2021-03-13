@@ -105,11 +105,15 @@
     
     <form onsubmit="return validate()" action="../dashboard/index.html">
       <input type="text" id="user" placeholder="Username">
+      <label id="userlabel" style="color:red; visibility: hidden;">Username Invalid</label>
       <br>
        <br>
-      <input type="password" id="pass" placeholder="Password""> 
+      <input type="password" id="pass" placeholder="Password"">
+      <label id="passlabel" style="color:red; visibility: hidden;">Password Invalid</label> 
       <br>
+      <label id="user_passlabel" style="color:red; visibility: hidden;">Username or Password too short</label>
       <br>
+      
       <button class="btn btn-primary" type="submit">Submit form</button>
       
     </form>

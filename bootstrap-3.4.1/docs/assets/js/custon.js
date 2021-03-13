@@ -73,13 +73,24 @@ function setOuldImage(){
 function validate(){
     var username = document.getElementById("user");
     var password = document.getElementById("pass");
+    var regx = /E00/i;
 
-    if(username.value.trim() =="" || password.value.trim() == "" ){
-        alert("Username or Password can't be blank!!!");
+    if(username.value.trim() == ""){
+        //alert("Username can't be blank!!");
+        document.getElementById("userlabel").style.visibility = "visible";
+        return false;
+    }else if(password.value.trim() == ""){
+        //alert("Password can't be blank!!!");
+        document.getElementById("passlabel").style.visibility = "visible";
+        return false;
+
+    }else if(password.value.trim().length < 5){
+        //alert("Username or Password have to be at least 5 character!!")
+        document.getElementById("user_passlabel").style.visibility = "visible";
         return false;
 
     }else{
-        true;
+        return true;
     }
 }
 
