@@ -100,9 +100,10 @@
       <p>Lyah Mayline S.J Tavares</p>
     
       <button id = "btnp" type="button" class="btn btn-danger" onclick="changeStyle()">Change Style</button>
-    
+    <!--
     <img id="imgchange" onmouseover="setNewImage()" src="../../assets/img/sass-less.png" width="450" onmouseout="setOuldImage()">
     
+    <h3>Form Validation</h3>
     <form onsubmit="return validate()" action="../dashboard/index.html">
       <input type="text" id="user" placeholder="Username">
       <label id="userlabel" style="color:red; visibility: hidden;">Username Invalid</label>
@@ -115,6 +116,23 @@
       <br>
       
       <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+    -->
+      
+    
+
+    <h3>Form Validate Expression</h3>
+    <form >
+      <input type="text" id="userExpression" placeholder="Username">
+      <label id="userlabel" style="color:red; visibility: hidden;">Username Invalid</label>
+      <br>
+      <br>
+      <input type="text" id="emailExpression" placeholder="Email">
+      <label id="emaillabel" style="color:red; visibility: hidden;">Email Invalid</label>
+      
+      <br>
+       <br>      
+      <button id="sucess" onclick="validateExpression()" class="btn btn-success" type="button">Submit</button>
       
     </form>
     

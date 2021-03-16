@@ -94,6 +94,40 @@ function validate(){
     }
 }
 
+/*
+    \d match any digital (igual a [0-9])
+    \w match any word caracter  (a-z,A-Z,0-9,& _)
+    \s match whitespace charater(space and tabs)
+    \t match tabs
+
+*/
+
+function validateExpression(){
+    var username = document.getElementById("userExpression").value;
+    var email = document.getElementById("emailExpression").value;
+    var reg =/^([a-zA-z0-9\.-]+)@([a-zA-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+    var regx = /^[2-5]\d{6}$/;
+
+    if(regx.test(username) && reg.test(email)){
+        document.getElementById("userlabel").innerHTML = "valid";
+        document.getElementById("userlabel").style.visibility = "visible";
+        document.getElementById("userlabel").style.color = "green";
+        document.getElementById("emaillabel").innerHTML = "valid";
+        document.getElementById("emaillabel").style.visibility = "visible";
+        document.getElementById("emaillabel").style.color = "green";
+        
+        
+    }else{
+        document.getElementById("userlabel").innerHTML = "Invalid";
+        document.getElementById("userlabel").style.visibility = "visible";
+        document.getElementById("userlabel").style.color = "red";
+        document.getElementById("emaillabel").innerHTML = "Invalid";
+        document.getElementById("emaillabel").style.visibility = "visible";
+        document.getElementById("emaillabel").style.color = "red";     
+    }
+
+   
+}
 
 //get element by id, innerhate it value and change it
 /*function buttonClick() {
