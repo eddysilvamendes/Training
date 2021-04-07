@@ -124,15 +124,16 @@
     <h3>Form Validate Expression</h3>
     <form >
       <input type="text" id="userExpression" placeholder="Username">
-      <label id="userlabel" style="color:red; visibility: hidden;">Username Invalid</label>
       <br>
       <br>
       <input type="text" id="emailExpression" placeholder="Email">
-      <label id="emaillabel" style="color:red; visibility: hidden;">Email Invalid</label>
-      
       <br>
-       <br>      
+      <br>
+      
       <button id="sucess" onclick="validateExpression()" class="btn btn-success" type="button">Submit</button>
+      <div id = "emaillabel" class="alert alert-success" role="alert" style="visibility: hidden;margin-top: 5px;">
+        <p>Success</p>
+      </div>
       
     </form>
     

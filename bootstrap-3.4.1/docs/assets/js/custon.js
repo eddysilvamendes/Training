@@ -109,18 +109,10 @@ function validateExpression(){
     var regx = /^[2-5]\d{6}$/;
 
     if(regx.test(username) && reg.test(email)){
-        document.getElementById("userlabel").innerHTML = "valid";
-        document.getElementById("userlabel").style.visibility = "visible";
-        document.getElementById("userlabel").style.color = "green";
-        document.getElementById("emaillabel").innerHTML = "valid";
         document.getElementById("emaillabel").style.visibility = "visible";
-        document.getElementById("emaillabel").style.color = "green";
         
         
     }else{
-        document.getElementById("userlabel").innerHTML = "Invalid";
-        document.getElementById("userlabel").style.visibility = "visible";
-        document.getElementById("userlabel").style.color = "red";
         document.getElementById("emaillabel").innerHTML = "Invalid";
         document.getElementById("emaillabel").style.visibility = "visible";
         document.getElementById("emaillabel").style.color = "red";     
